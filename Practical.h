@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <sys/socket.h>
+#include <netinet/in.h>
 
 // Handle error with user msg
 void DieWithUserMessage(const char *msg, const char *detail);
@@ -21,6 +22,8 @@ int AcceptTCPConnection(int servSock);
 void HandleTCPClient(int clntSocket);
 // Create and connect a new TCP client socket
 int SetupTCPClientSocket(const char *server, const char *service);
+// Create server address
+void CreateServerAddress(struct sockaddr_in& servAddr, const char* servIP, in_port_t servPort);
 
 enum sizeConstants {
     MAXSTRINGLENGTH = 128,

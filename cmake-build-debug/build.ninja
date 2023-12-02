@@ -63,6 +63,13 @@ build CMakeFiles/client.dir/DieWithMessage.cpp.o: CXX_COMPILER__client_unscanned
   OBJECT_DIR = CMakeFiles/client.dir
   OBJECT_FILE_DIR = CMakeFiles/client.dir
 
+build CMakeFiles/client.dir/CreateServerAddress.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = CMakeFiles/client.dir/CreateServerAddress.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  OBJECT_DIR = CMakeFiles/client.dir
+  OBJECT_FILE_DIR = CMakeFiles/client.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target client
@@ -71,7 +78,7 @@ build CMakeFiles/client.dir/DieWithMessage.cpp.o: CXX_COMPILER__client_unscanned
 #############################################
 # Link the executable client
 
-build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/Client.cpp.o CMakeFiles/client.dir/DieWithMessage.cpp.o
+build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/Client.cpp.o CMakeFiles/client.dir/DieWithMessage.cpp.o CMakeFiles/client.dir/CreateServerAddress.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/client.dir
   POST_BUILD = :
@@ -95,15 +102,15 @@ build CMakeFiles/server.dir/Server.cpp.o: CXX_COMPILER__server_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
-build CMakeFiles/server.dir/HandleTCPClient.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/HandleTCPClient.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/HandleTCPClient.cpp.o.d
+build CMakeFiles/server.dir/DieWithMessage.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/DieWithMessage.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
-build CMakeFiles/server.dir/DieWithMessage.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/DieWithMessage.cpp.o.d
+build CMakeFiles/server.dir/CreateServerAddress.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/CreateServerAddress.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/server.dir
@@ -117,7 +124,7 @@ build CMakeFiles/server.dir/DieWithMessage.cpp.o: CXX_COMPILER__server_unscanned
 #############################################
 # Link the executable server
 
-build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/HandleTCPClient.cpp.o CMakeFiles/server.dir/DieWithMessage.cpp.o
+build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/DieWithMessage.cpp.o CMakeFiles/server.dir/CreateServerAddress.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/server.dir
   POST_BUILD = :

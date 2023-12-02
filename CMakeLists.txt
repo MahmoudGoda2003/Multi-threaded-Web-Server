@@ -8,10 +8,11 @@ include_directories(.)
 add_executable(client
         Client.cpp
         DieWithMessage.cpp
+        CreateServerAddress.cpp
         Practical.h)
 
 add_executable(server
         Server.cpp
-        HandleTCPClient.cpp
         DieWithMessage.cpp
+        CreateServerAddress.cpp
         Practical.h)
