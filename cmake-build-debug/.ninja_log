@@ -1,0 +1,12 @@
+# ninja log v5
+0	210	1701477949140009813	CMakeFiles/server.dir/Server.cpp.o	f334e7ca3f2ba310
+157	293	1701477857621099938	client	9e53d571a3a2c617
+1	54	1701476269256486702	CMakeFiles/Multi_threaded_Web_Server.dir/DieWithMessage.cpp.o	6a153d04d754a99
+1	122	1701477857449102049	CMakeFiles/client.dir/DieWithMessage.cpp.o	39b4769a99edfca0
+0	157	1701477857481101656	CMakeFiles/client.dir/Client.cpp.o	77c68ffc5844cde7
+54	99	1701476269300486533	Multi_threaded_Web_Server	59c37d0447c9f99
+1	82	1701476122177062853	CMakeFiles/Multi_threaded_Web_Server.dir/Client.cpp.o	6e6a7a1c284ddabd
+2	112	1701477949044010929	CMakeFiles/server.dir/HandleTCPClient.cpp.o	184e9b217b187c19
+0	106	1701477967955793374	build.ninja	af6931c2a02fa82a
+1	121	1701477968095791772	CMakeFiles/server.dir/DieWithMessage.cpp.o	991790c332ec0878
+121	300	1701477968267789806	server	c77a6f643f35c036
