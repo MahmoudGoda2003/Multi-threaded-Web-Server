@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     if (listen(servSock, MAXPENDING) < 0)
         DieWithSystemMessage("listen() failed");
 
-    for (;;) { // Run forever
+    for (;;) {
         struct sockaddr_in clntAddr; // Client address
         // Set the length of the client address structure (in-out parameter)
         socklen_t clntAddrLen = sizeof(clntAddr);
