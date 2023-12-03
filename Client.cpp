@@ -14,9 +14,9 @@ using namespace std;
 
 const string FILE_NAME = "input";
 
-void parse(const string& line, string& method, string& host, string& path) {
+void parse(const string& line, string& method, string& path, string& host) {
     istringstream iss(line);
-    iss >> method >> host >> path;
+    iss >> method >> path >> host;
 }
 
 void client_get(int sock, const char *path, const char *host) {
@@ -25,7 +25,8 @@ void client_get(int sock, const char *path, const char *host) {
     snprintf(request, BUFSIZE,
              "GET %s HTTP/1.1\r\n"
              "Host: %s\r\n"
-             "Connection: close\r\n\r\n",
+             "Connection: keep-alive\r\n",
+             "Content-Length: %s\r\n\r\n",
              path, host);
 
     ssize_t numBytes = send(sock, request, strlen(request), 0);
@@ -87,11 +88,15 @@ int main(int argc, char *argv[]) {
     }
 
     string line;
-    while (getline(inputFile, line)) {
-        string method, host, path;
-        parse(line, method, host, path);
 
-        if (method != "GET" && method != "POST") {
+    while (getline(inputFile, line)) {
+        string method, path, host;
+        parse(line, method, path, host);
+        cout << "method: " << method << endl;
+        cout << "path: " << path << endl;
+        cout << "host: " << host << endl;
+
+        if (method != "client_get" && method != "client_post") {
             cerr << "Invalid method: " << method << endl;
             inputFile.close();
             exit(1);
@@ -107,9 +112,9 @@ int main(int argc, char *argv[]) {
         if (connect(sock, (struct sockaddr *) &servAddr, sizeof(servAddr)) < 0)
             DieWithSystemMessage("connect() failed");
 
-        if (method == "GET")
+        if (method == "client_get")
             client_get(sock, path.c_str(), host.c_str());
-        else if (method == "POST")
+        else if (method == "client_post")
             client_post(sock, path.c_str(), host.c_str());
     }
 

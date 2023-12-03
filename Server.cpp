@@ -1,11 +1,11 @@
+#include <iostream>
 #include <cstdio>
 #include <cstdlib>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
-#include <thread>
-#include <vector>
+#include <pthread.h>
 #include <cstring>
 #include "Practical.h"
 
@@ -14,7 +14,10 @@ static const int MAX_PENDING = 5;
 
 using namespace std;
 
-void HandleClient(int clntSocket) {
+void *HandleClient(void *arg) {
+    int clntSocket = *((int *) arg);
+    cout << "thread: " << pthread_self() <<  endl;
+
     char buffer[BUFSIZE];
     ssize_t numBytesRcvd;
 
@@ -39,6 +42,7 @@ void HandleClient(int clntSocket) {
         DieWithSystemMessage("send() failed");
 
     close(clntSocket);
+    pthread_exit(nullptr);
 }
 
 int main(int argc, char *argv[]) {
@@ -60,12 +64,9 @@ int main(int argc, char *argv[]) {
     if (listen(servSock, MAX_PENDING) < 0)
         DieWithSystemMessage("listen() failed");
 
-    vector<thread> threads;
-
     while (true) {
         struct sockaddr_in clntAddr{};
         socklen_t clntAddrLen = sizeof(clntAddr);
-
         int clntSock = accept(servSock, (struct sockaddr *) &clntAddr, &clntAddrLen);
         if (clntSock < 0) {
             perror("accept() failed");
@@ -78,11 +79,13 @@ int main(int argc, char *argv[]) {
         else
             puts("Unable to get client address");
 
-        threads.emplace_back(thread(HandleClient, clntSock));
-        threads.back().detach();  // Detach the thread to allow it to run independently
+        pthread_t thread;
+        if (pthread_create(&thread, nullptr, HandleClient, &clntSock) != 0)
+            perror("pthread_create() failed");
+        else
+            pthread_detach(thread);
     }
 
     close(servSock); // Close the server socket on termination
-
     return 0;
 }
