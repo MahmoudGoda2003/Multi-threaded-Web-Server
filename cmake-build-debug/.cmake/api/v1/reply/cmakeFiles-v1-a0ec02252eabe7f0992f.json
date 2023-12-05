@@ -125,8 +125,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug",
-		"source" : "/home/mostafa-galal/Multi-threaded-Web-Server"
+		"build" : "/home/goda/Multi-threaded-Web-Server/cmake-build-debug",
+		"source" : "/home/goda/Multi-threaded-Web-Server"
 	},
 	"version" : 
 	{

@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-client-Debug-6bbf67c549c455cd216d.json",
+					"jsonFile" : "target-client-Debug-c7fce17a50a0d83cc737.json",
 					"name" : "client",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server-Debug-5c44596c1685a253eb50.json",
+					"jsonFile" : "target-server-Debug-0ce0f08fc06bf6de4f12.json",
 					"name" : "server",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug",
-		"source" : "/home/mostafa-galal/Multi-threaded-Web-Server"
+		"build" : "/home/goda/Multi-threaded-Web-Server/cmake-build-debug",
+		"source" : "/home/goda/Multi-threaded-Web-Server"
 	},
 	"version" : 
 	{

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug/
+cmake_ninja_workdir = /home/goda/Multi-threaded-Web-Server/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target client
 
@@ -49,24 +49,38 @@ cmake_ninja_workdir = /home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-
 
 build cmake_object_order_depends_target_client: phony || CMakeFiles/client.dir
 
-build CMakeFiles/client.dir/Client.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/Client.cpp || cmake_object_order_depends_target_client
+build CMakeFiles/client.dir/Client.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/goda/Multi-threaded-Web-Server/Client.cpp || cmake_object_order_depends_target_client
   DEP_FILE = CMakeFiles/client.dir/Client.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/client.dir
   OBJECT_FILE_DIR = CMakeFiles/client.dir
 
-build CMakeFiles/client.dir/DieWithMessage.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_client
+build CMakeFiles/client.dir/DieWithMessage.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/goda/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_client
   DEP_FILE = CMakeFiles/client.dir/DieWithMessage.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/client.dir
   OBJECT_FILE_DIR = CMakeFiles/client.dir
 
-build CMakeFiles/client.dir/CreateServerAddress.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_client
+build CMakeFiles/client.dir/CreateServerAddress.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/goda/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_client
   DEP_FILE = CMakeFiles/client.dir/CreateServerAddress.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
+  OBJECT_DIR = CMakeFiles/client.dir
+  OBJECT_FILE_DIR = CMakeFiles/client.dir
+
+build CMakeFiles/client.dir/HttpParser.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/goda/Multi-threaded-Web-Server/HttpParser.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = CMakeFiles/client.dir/HttpParser.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
+  OBJECT_DIR = CMakeFiles/client.dir
+  OBJECT_FILE_DIR = CMakeFiles/client.dir
+
+build CMakeFiles/client.dir/FileOperations.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/goda/Multi-threaded-Web-Server/FileOperations.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = CMakeFiles/client.dir/FileOperations.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/client.dir
   OBJECT_FILE_DIR = CMakeFiles/client.dir
 
@@ -78,8 +92,9 @@ build CMakeFiles/client.dir/CreateServerAddress.cpp.o: CXX_COMPILER__client_unsc
 #############################################
 # Link the executable client
 
-build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/Client.cpp.o CMakeFiles/client.dir/DieWithMessage.cpp.o CMakeFiles/client.dir/CreateServerAddress.cpp.o
+build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/Client.cpp.o CMakeFiles/client.dir/DieWithMessage.cpp.o CMakeFiles/client.dir/CreateServerAddress.cpp.o CMakeFiles/client.dir/HttpParser.cpp.o CMakeFiles/client.dir/FileOperations.cpp.o
   FLAGS = -g
+  LINK_LIBRARIES = -lstdc++fs
   OBJECT_DIR = CMakeFiles/client.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -95,24 +110,38 @@ build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/Client.c
 
 build cmake_object_order_depends_target_server: phony || CMakeFiles/server.dir
 
-build CMakeFiles/server.dir/Server.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/Server.cpp || cmake_object_order_depends_target_server
+build CMakeFiles/server.dir/Server.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/goda/Multi-threaded-Web-Server/Server.cpp || cmake_object_order_depends_target_server
   DEP_FILE = CMakeFiles/server.dir/Server.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
-build CMakeFiles/server.dir/DieWithMessage.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_server
+build CMakeFiles/server.dir/DieWithMessage.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/goda/Multi-threaded-Web-Server/DieWithMessage.cpp || cmake_object_order_depends_target_server
   DEP_FILE = CMakeFiles/server.dir/DieWithMessage.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
-build CMakeFiles/server.dir/CreateServerAddress.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/mostafa-galal/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_server
+build CMakeFiles/server.dir/CreateServerAddress.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/goda/Multi-threaded-Web-Server/CreateServerAddress.cpp || cmake_object_order_depends_target_server
   DEP_FILE = CMakeFiles/server.dir/CreateServerAddress.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I/home/mostafa-galal/Multi-threaded-Web-Server/.
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
+  OBJECT_DIR = CMakeFiles/server.dir
+  OBJECT_FILE_DIR = CMakeFiles/server.dir
+
+build CMakeFiles/server.dir/HttpParser.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/goda/Multi-threaded-Web-Server/HttpParser.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/HttpParser.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
+  OBJECT_DIR = CMakeFiles/server.dir
+  OBJECT_FILE_DIR = CMakeFiles/server.dir
+
+build CMakeFiles/server.dir/FileOperations.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/goda/Multi-threaded-Web-Server/FileOperations.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/FileOperations.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/goda/Multi-threaded-Web-Server/.
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
@@ -124,8 +153,9 @@ build CMakeFiles/server.dir/CreateServerAddress.cpp.o: CXX_COMPILER__server_unsc
 #############################################
 # Link the executable server
 
-build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/DieWithMessage.cpp.o CMakeFiles/server.dir/CreateServerAddress.cpp.o
+build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/DieWithMessage.cpp.o CMakeFiles/server.dir/CreateServerAddress.cpp.o CMakeFiles/server.dir/HttpParser.cpp.o CMakeFiles/server.dir/FileOperations.cpp.o
   FLAGS = -g
+  LINK_LIBRARIES = -lstdc++fs  -lpthread
   OBJECT_DIR = CMakeFiles/server.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -137,7 +167,7 @@ build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/Server.c
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/goda/Multi-threaded-Web-Server/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -148,7 +178,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mostafa-galal/Multi-threaded-Web-Server -B/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug
+  COMMAND = cd /home/goda/Multi-threaded-Web-Server/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/goda/Multi-threaded-Web-Server -B/home/goda/Multi-threaded-Web-Server/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -164,7 +194,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug
+# Folder: /home/goda/Multi-threaded-Web-Server/cmake-build-debug
 
 build all: phony client server
 
@@ -175,14 +205,14 @@ build all: phony client server
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/mostafa-galal/Multi-threaded-Web-Server/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/goda/Multi-threaded-Web-Server/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/mostafa-galal/Multi-threaded-Web-Server/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /home/goda/Multi-threaded-Web-Server/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

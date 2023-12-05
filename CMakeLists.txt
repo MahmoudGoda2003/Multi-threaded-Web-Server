@@ -9,10 +9,18 @@ add_executable(client
         Client.cpp
         DieWithMessage.cpp
         CreateServerAddress.cpp
-        Practical.h)
+        HttpParser.cpp
+        Utilities.h
+        FileOperations.cpp)
 
 add_executable(server
         Server.cpp
         DieWithMessage.cpp
         CreateServerAddress.cpp
-        Practical.h)
+        HttpParser.cpp
+        Utilities.h
+        FileOperations.cpp)
+
+target_link_libraries(server stdc++fs)
+target_link_libraries(client stdc++fs)
+target_link_libraries(server pthread)

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug"
+			"value" : "/home/goda/Multi-threaded-Web-Server/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar-7"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib-7"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar-7"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib-7"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/goda/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mostafa-galal/Multi-threaded-Web-Server"
+			"value" : "/home/goda/Multi-threaded-Web-Server"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1107,7 +1107,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/uname"
+			"value" : "/bin/uname"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mostafa-galal/Multi-threaded-Web-Server/cmake-build-debug"
+			"value" : "/home/goda/Multi-threaded-Web-Server/cmake-build-debug"
 		},
 		{
 			"name" : "Multi_threaded_Web_Server_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mostafa-galal/Multi-threaded-Web-Server"
+			"value" : "/home/goda/Multi-threaded-Web-Server"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
