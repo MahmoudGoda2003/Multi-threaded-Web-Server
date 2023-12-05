@@ -1,4 +1,0 @@
-/home/goda/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/client.dir
-/home/goda/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/server.dir
-/home/goda/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/goda/Multi-threaded-Web-Server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
